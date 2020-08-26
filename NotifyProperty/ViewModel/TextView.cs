@@ -25,18 +25,5 @@ namespace NotifyProperty.ViewModel
                 OnPropertyChanged("Text");
             }
         }
-
-        private int _length;
-        public int Length
-        {
-            get
-            {
-                return _length;
-            }
-            private set
-            {
-                _length = Text.Length;
-            }
-        }
     }
 }

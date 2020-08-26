@@ -12,11 +12,11 @@ namespace NotifyProperty
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
-        protected void OnPropertyChanged(string name)
+        protected void OnPropertyChanged(string varName)
         {
             if (PropertyChanged != null)
             {
-                PropertyChanged(this, new PropertyChangedEventArgs(name));
+                PropertyChanged(this, new PropertyChangedEventArgs(varName));
             }
             //PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
         }
