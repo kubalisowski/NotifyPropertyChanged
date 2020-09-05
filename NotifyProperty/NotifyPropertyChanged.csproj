@@ -55,6 +55,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Browser.cs" />
+    <Compile Include="Interface\BrowserInterface.cs" />
     <Compile Include="ViewModel\MainView.cs" />
     <Compile Include="ViewModel\TextView.cs" />
     <Page Include="MainWindow.xaml">

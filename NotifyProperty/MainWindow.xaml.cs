@@ -24,5 +24,26 @@ namespace NotifyProperty
             InitializeComponent();
             DataContext = _main;
         }
+
+        /// METHODS
+        private void Search(string client)
+        {
+            string msg = textBlock.Text;
+            Browser browser = new Browser();
+            browser.OpenBrowser(client, msg);
+        }
+        ////////////////////////////////////////////
+
+        /// BUTTONS
+        private void googlebutton_Click(object sender, RoutedEventArgs e)
+        {
+            Search("google");
+        }
+
+        private void yahoobutton_Click(object sender, RoutedEventArgs e)
+        {
+            Search("yahoo");
+        }
+        ////////////////////////////////////////////
     }
 }

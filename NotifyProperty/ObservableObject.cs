@@ -18,7 +18,7 @@ namespace NotifyProperty
             {
                 PropertyChanged(this, new PropertyChangedEventArgs(varName));
             }
-            //PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
+
         }
     }
 }
